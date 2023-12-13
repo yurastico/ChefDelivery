@@ -10,12 +10,15 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            NavigationBarView()
+                .padding(.horizontal,15)
+            ScrollView(.vertical,showsIndicators: false) {
+                VStack {
+                    OrderTypeGridView()
+                }
+            }
         }
-        .padding()
+        
     }
 }
 
