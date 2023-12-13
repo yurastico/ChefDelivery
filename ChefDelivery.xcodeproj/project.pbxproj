@@ -18,6 +18,8 @@
 		C5CD98C62B298C7000799ECD /* OrderTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CD98C52B298C7000799ECD /* OrderTypeView.swift */; };
 		C5CD98C92B29900700799ECD /* CarouselItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CD98C82B29900700799ECD /* CarouselItemView.swift */; };
 		C5CD98CB2B2990DB00799ECD /* CarouselTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CD98CA2B2990DB00799ECD /* CarouselTabView.swift */; };
+		C5CD98CE2B29925100799ECD /* StoreItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CD98CD2B29925100799ECD /* StoreItemView.swift */; };
+		C5CD98D02B29934200799ECD /* StoresContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CD98CF2B29934200799ECD /* StoresContainerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		C5CD98C52B298C7000799ECD /* OrderTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTypeView.swift; sourceTree = "<group>"; };
 		C5CD98C82B29900700799ECD /* CarouselItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselItemView.swift; sourceTree = "<group>"; };
 		C5CD98CA2B2990DB00799ECD /* CarouselTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselTabView.swift; sourceTree = "<group>"; };
+		C5CD98CD2B29925100799ECD /* StoreItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreItemView.swift; sourceTree = "<group>"; };
+		C5CD98CF2B29934200799ECD /* StoresContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoresContainerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,7 @@
 				C5CD98B92B2985AD00799ECD /* NavigationBar */,
 				C5CD98BD2B29890000799ECD /* GridView */,
 				C5CD98C72B298FBA00799ECD /* CarouselView */,
+				C5CD98CC2B29923D00799ECD /* StoresView */,
 				C5CD98AF2B2983A300799ECD /* Assets.xcassets */,
 				C5CD98B12B2983A300799ECD /* Preview Content */,
 			);
@@ -126,6 +131,15 @@
 				C5CD98CA2B2990DB00799ECD /* CarouselTabView.swift */,
 			);
 			path = CarouselView;
+			sourceTree = "<group>";
+		};
+		C5CD98CC2B29923D00799ECD /* StoresView */ = {
+			isa = PBXGroup;
+			children = (
+				C5CD98CD2B29925100799ECD /* StoreItemView.swift */,
+				C5CD98CF2B29934200799ECD /* StoresContainerView.swift */,
+			);
+			path = StoresView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,7 +216,9 @@
 				C5CD98C92B29900700799ECD /* CarouselItemView.swift in Sources */,
 				C5CD98AE2B2983A200799ECD /* ContentView.swift in Sources */,
 				C5CD98C42B298B6400799ECD /* DataSourceMock.swift in Sources */,
+				C5CD98D02B29934200799ECD /* StoresContainerView.swift in Sources */,
 				C5CD98C62B298C7000799ECD /* OrderTypeView.swift in Sources */,
+				C5CD98CE2B29925100799ECD /* StoreItemView.swift in Sources */,
 				C5CD98BF2B29892700799ECD /* OrderTypeGridView.swift in Sources */,
 				C5CD98AC2B2983A200799ECD /* ChefDeliveryApp.swift in Sources */,
 				C5CD98BC2B2985CF00799ECD /* NavigationBarView.swift in Sources */,
