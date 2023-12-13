@@ -8,16 +8,16 @@
 import SwiftUI
 
 struct StoreItemView: View {
-    let orderType: OrderType
+    let storeType: StoreType
     var body: some View {
         HStack {
-            Image(orderType.image)
+            Image(storeType.logoImage)
                 .resizable()
                 .scaledToFit()
                 .clipShape(RoundedRectangle(cornerRadius: 25))
                 .frame(width: 50,height: 50)
             VStack {
-                Text(orderType.name)
+                Text(storeType.name)
                     .font(.subheadline)
             }
             Spacer()
@@ -26,5 +26,5 @@ struct StoreItemView: View {
 }
 
 #Preview {
-    StoreItemView(orderType: ordersMock[0])
+    StoreItemView(storeType: storesMock[0])
 }
