@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C5233D7C2B2B1BD000130218 /* ProductDetailview.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5233D7B2B2B1BD000130218 /* ProductDetailview.swift */; };
 		C5CD98AC2B2983A200799ECD /* ChefDeliveryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CD98AB2B2983A200799ECD /* ChefDeliveryApp.swift */; };
 		C5CD98AE2B2983A200799ECD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CD98AD2B2983A200799ECD /* ContentView.swift */; };
 		C5CD98B32B2983A300799ECD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5CD98B22B2983A300799ECD /* Preview Assets.xcassets */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C5233D7B2B2B1BD000130218 /* ProductDetailview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailview.swift; sourceTree = "<group>"; };
 		C5CD98A82B2983A200799ECD /* ChefDelivery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChefDelivery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5CD98AB2B2983A200799ECD /* ChefDeliveryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChefDeliveryApp.swift; sourceTree = "<group>"; };
 		C5CD98AD2B2983A200799ECD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -58,6 +60,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C5233D7A2B2B1BBE00130218 /* ProductView */ = {
+			isa = PBXGroup;
+			children = (
+				C5233D7B2B2B1BD000130218 /* ProductDetailview.swift */,
+			);
+			path = ProductView;
+			sourceTree = "<group>";
+		};
 		C5CD989F2B2983A100799ECD = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +94,7 @@
 				C5CD98BD2B29890000799ECD /* GridView */,
 				C5CD98C72B298FBA00799ECD /* CarouselView */,
 				C5CD98CC2B29923D00799ECD /* StoresView */,
+				C5233D7A2B2B1BBE00130218 /* ProductView */,
 				C5CD98B12B2983A300799ECD /* Preview Content */,
 				C5CD98D72B29A6A800799ECD /* Assets.xcassets */,
 			);
@@ -233,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5CD98C22B298B1800799ECD /* OrderType.swift in Sources */,
+				C5233D7C2B2B1BD000130218 /* ProductDetailview.swift in Sources */,
 				C5CD98D62B29A52B00799ECD /* ProductType.swift in Sources */,
 				C5CD98C92B29900700799ECD /* CarouselItemView.swift in Sources */,
 				C5CD98AE2B2983A200799ECD /* ContentView.swift in Sources */,
