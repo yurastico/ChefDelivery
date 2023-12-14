@@ -23,6 +23,7 @@
 		C5CD98D42B29A4F700799ECD /* StoreType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CD98D32B29A4F700799ECD /* StoreType.swift */; };
 		C5CD98D62B29A52B00799ECD /* ProductType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CD98D52B29A52B00799ECD /* ProductType.swift */; };
 		C5CD98D82B29A6A800799ECD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5CD98D72B29A6A800799ECD /* Assets.xcassets */; };
+		C5CD98DB2B2AF5E300799ECD /* Double+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CD98DA2B2AF5E300799ECD /* Double+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		C5CD98D32B29A4F700799ECD /* StoreType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreType.swift; sourceTree = "<group>"; };
 		C5CD98D52B29A52B00799ECD /* ProductType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductType.swift; sourceTree = "<group>"; };
 		C5CD98D72B29A6A800799ECD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "Preview Content/Assets.xcassets"; sourceTree = "<group>"; };
+		C5CD98DA2B2AF5E300799ECD /* Double+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 		C5CD98AA2B2983A200799ECD /* ChefDelivery */ = {
 			isa = PBXGroup;
 			children = (
+				C5CD98D92B2AF5D900799ECD /* Extensions */,
 				C5CD98C02B298B0700799ECD /* Model */,
 				C5CD98BA2B2985B800799ECD /* App */,
 				C5CD98B92B2985AD00799ECD /* NavigationBar */,
@@ -151,6 +154,14 @@
 			path = StoresView;
 			sourceTree = "<group>";
 		};
+		C5CD98D92B2AF5D900799ECD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C5CD98DA2B2AF5E300799ECD /* Double+.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -225,6 +236,7 @@
 				C5CD98D62B29A52B00799ECD /* ProductType.swift in Sources */,
 				C5CD98C92B29900700799ECD /* CarouselItemView.swift in Sources */,
 				C5CD98AE2B2983A200799ECD /* ContentView.swift in Sources */,
+				C5CD98DB2B2AF5E300799ECD /* Double+.swift in Sources */,
 				C5CD98C42B298B6400799ECD /* DataSourceMock.swift in Sources */,
 				C5CD98D02B29934200799ECD /* StoresContainerView.swift in Sources */,
 				C5CD98C62B298C7000799ECD /* OrderTypeView.swift in Sources */,
