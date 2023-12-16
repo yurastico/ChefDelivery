@@ -6,13 +6,28 @@
 //
 
 import Foundation
-
+import Alamofire
 enum RequestError: Error {
     case invalidURL
     case errorRequest(error: String?)
 }
 
 struct HomeService {
+    
+    func fetchDataWithAlamofire(completion: @escaping ([StoreType]?,Error?) -> Void) {
+        AF.request("https://private-7815e6-vollmed.apiary-mock.com/home").responseDecodable(of: [StoreType].self) { response in
+            switch response.result {
+            case .success(let stores):
+                completion(stores,nil)
+            default:
+                print("erro")
+            }
+            
+        }
+        
+    }
+    
+    
     func fetchData() async throws -> Result<[StoreType],RequestError> {
         let stringURL = "https://private-7815e6-vollmed.apiary-mock.com/home"
         guard let url = URL(string: stringURL) else { return .failure(.invalidURL)}
