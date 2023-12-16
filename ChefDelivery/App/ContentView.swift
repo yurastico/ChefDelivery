@@ -8,47 +8,52 @@
 import SwiftUI
 
 struct ContentView: View {
+    private var service = HomeService()
+    @State private var storesType: [StoreType] = []
+    @State private var isloading = true
     var body: some View {
         NavigationStack {
             VStack {
-                NavigationBarView()
-                    .padding(.horizontal,15)
-                ScrollView(.vertical,showsIndicators: false) {
-                    VStack(spacing: 20) {
-                        OrderTypeGridView()
-                        CarouselTabView()
-                        StoresContainerView()
+                if isloading {
+                    ProgressView()
+                } else {
+                    NavigationBarView()
+                        .padding(.horizontal,15)
+                    ScrollView(.vertical,showsIndicators: false) {
+                        VStack(spacing: 20) {
+                            OrderTypeGridView()
+                            CarouselTabView()
+                            StoresContainerView(stores: storesType)
+                        }
                     }
                 }
             }
         }
         .onAppear {
-            fetchData()
+            Task {
+                await getStores()
+            }
         }
         
     }
     // MARK: -- METHODS
-    private func fetchData() {
-        let stringURL = "https://private-7815e6-vollmed.apiary-mock.com/"
-        guard let url = URL(string: stringURL) else { return }
-        
-        URLSession.shared.dataTask(with: url) {data,_,error in
-            if let error = error {
+    func getStores() async {
+        do {
+            let result = try await service.fetchData()
+            switch result {
+            case .success(let stores):
+                self.storesType = stores
+                self.isloading = false
+            case .failure(let error):
                 print(error.localizedDescription)
-                return
+                self.isloading = false
             }
-            if let data {
-                do {
-                    let json = try JSONSerialization.jsonObject(with: data) as? [[String: Any]]
-                } catch {
-                    print(error.localizedDescription)
-                }
-                
-            }
-            
+        } catch {
+            print(error.localizedDescription)
+            self.isloading = false
         }
-        .resume()
     }
+
 }
 
 #Preview {
