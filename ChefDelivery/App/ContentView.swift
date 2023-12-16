@@ -22,7 +22,32 @@ struct ContentView: View {
                 }
             }
         }
+        .onAppear {
+            fetchData()
+        }
         
+    }
+    // MARK: -- METHODS
+    private func fetchData() {
+        let stringURL = "https://private-7815e6-vollmed.apiary-mock.com/"
+        guard let url = URL(string: stringURL) else { return }
+        
+        URLSession.shared.dataTask(with: url) {data,_,error in
+            if let error = error {
+                print(error.localizedDescription)
+                return
+            }
+            if let data {
+                do {
+                    let json = try JSONSerialization.jsonObject(with: data) as? [[String: Any]]
+                } catch {
+                    print(error.localizedDescription)
+                }
+                
+            }
+            
+        }
+        .resume()
     }
 }
 
