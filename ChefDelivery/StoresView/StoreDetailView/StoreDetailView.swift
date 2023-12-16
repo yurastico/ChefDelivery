@@ -15,10 +15,7 @@ struct StoreDetailView: View {
         ScrollView {
             VStack(alignment: .leading) {
                 StoreDetailHeaderView(store: store)
-                
                 StoreDetailProductsView(store: store)
-                
-
             }
             
         }

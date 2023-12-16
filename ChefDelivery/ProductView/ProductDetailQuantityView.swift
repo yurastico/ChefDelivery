@@ -27,12 +27,12 @@ struct ProductDetailQuantityView: View {
                 }
                 .disabled(quantity == 1)
                 
-                Text("\(0)")
+                Text("\(quantity)")
                     .font(.title2)
                 Button {
                     quantity += 1
                 } label: {
-                    Image(systemName: "minus.circle.fill")
+                    Image(systemName: "plus.circle.fill")
                         .font(.title)
                         .bold()
                 }

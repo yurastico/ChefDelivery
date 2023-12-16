@@ -43,6 +43,7 @@ struct ContentView: View {
             switch result {
             case .success(let stores):
                 self.storesType = stores
+                print(stores[0].products)
                 self.isloading = false
             case .failure(let error):
                 print(error.localizedDescription)

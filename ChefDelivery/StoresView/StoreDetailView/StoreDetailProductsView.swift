@@ -16,11 +16,12 @@ struct StoreDetailProductsView: View {
                 .font(.title2)
                 .bold()
                 .padding()
+            
             ForEach(store.products) { product in
                 Button {
                     isPresentingProducDetailview = true
                 } label: {  
-                    
+                    StoreDetailProductItemView(product: product)
                 }
                 .sheet(isPresented: $isPresentingProducDetailview) {
                     ProductDetailview(product: product)
